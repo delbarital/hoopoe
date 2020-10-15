@@ -13,7 +13,8 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 <ul>
 <li>US states</li>
     <ul>
-        <li>US state name abbriviation</li>
+        <li>State name abbriviation (USPS abbreviation)</li>
+        <li>State capital city</li>
         <li>Full state name</li>
         <li>State population</li>
     </ul>
@@ -26,6 +27,7 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 
 ## Work in progress datasets
 <ul>
+<li>US states ISO 3166 code</li>
 <li>US states area</li>
 <li>US states time zone</li>
 <li>US states density</li>
