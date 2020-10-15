@@ -23,3 +23,13 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
         <li>International calling code</li>
     </ul>
 </ul>
+
+## Work in progress datasets
+<ul>
+<li>US states area</li>
+<li>US states time zone</li>
+<li>US states density</li>
+<li>US population rank</li>
+<li>US states income rank</li>
+<li>US states density rank</li>
+</ul>
