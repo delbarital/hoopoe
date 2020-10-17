@@ -190,7 +190,6 @@ def us_state_full_name_to_population(df, source_data_name):
     df.replace({source_data_name: state_full_name_to_population}, inplace=True)
     return df
 
-
 def us_state_full_name_to_capital_city(df, source_data_name):
     df = df
     state_fullname_to_capital_city_name = {
