@@ -22,7 +22,7 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
                 <li>CSA population (Combined statistical area)</li>
             </ul>
         <li>Full state name</li>
-        <li>State population:</li>
+        <li>State population</li>
     </ul>
 <li>Country calling codes</li>
     <ul>
