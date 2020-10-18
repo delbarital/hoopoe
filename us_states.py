@@ -190,6 +190,63 @@ def us_state_full_name_to_population(df, source_data_name):
     df.replace({source_data_name: state_full_name_to_population}, inplace=True)
     return df
 
+def us_state_full_name_to_area_rank(df, source_data_name):
+    df = df
+    state_full_name_to_area_rank = {
+        'alaska':	'1',
+        'texas':	'2',
+        'california':	'3',
+        'montana':	'4',
+        'new mexico':	'5',
+        'arizona':	'6',
+        'nevada':	'7',
+        'colorado':	'8',
+        'oregon':	'9',
+        'wyoming':	'10',
+        'michigan':	'11',
+        'minnesota':	'12',
+        'utah':	'13',
+        'idaho':	'14',
+        'kansas':	'15',
+        'nebraska':	'16',
+        'south dakota':	'17',
+        'washington':	'18',
+        'north dakota':	'19',
+        'oklahoma':	'20',
+        'missouri':	'21',
+        'florida':	'22',
+        'wisconsin':	'23',
+        'georgia':	'24',
+        'illinois':	'25',
+        'iowa':	'26',
+        'new york':	'27',
+        'north carolina':	'28',
+        'arkansas':	'29',
+        'alabama':	'30',
+        'louisiana':	'31',
+        'mississippi':	'32',
+        'pennsylvania':	'33',
+        'ohio':	'34',
+        'virginia':	'35',
+        'tennessee':	'36',
+        'kentucky':	'37',
+        'indiana':	'38',
+        'maine':	'39',
+        'south carolina':	'40',
+        'west virginia':	'41',
+        'maryland':	'42',
+        'hawaii':	'43',
+        'massachusetts':	'44',
+        'vermont':	'45',
+        'new hampshire':	'46',
+        'new jersey':	'47',
+        'connecticut':	'48',
+        'delaware':	'49',
+        'rhode island':	'50'
+    }
+    df.replace({source_data_name: state_full_name_to_area_rank}, inplace=True)
+    return df
+
 def us_state_full_name_to_capital_city(df, source_data_name):
     df = df
     state_fullname_to_capital_city_name = {

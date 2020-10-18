@@ -1,5 +1,5 @@
 # Hoopoe
-## A fast and easy way to enrich your data
+## A f ast and easy way to enrich your data
 
 
 Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.
