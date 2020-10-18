@@ -14,17 +14,20 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 <li>US states</li>
     <ul>
         <li>State name abbriviation (USPS abbreviation)</li>
-        <li>State capital city</li>
-        <li>State capital city population:</li>
-            <ul>
-                <li>Population</li>
-                <li>MSA/µSA population (Metropolitan statistical area / Micropolitan statistical area)</li>
-                <li>CSA population (Combined statistical area)</li>
-            </ul>
         <li>Full state name</li>
         <li>State population</li>
+        <li>State capital city:</li>
+            <ul>
+                <li>State capital city name</li>
+                <li>State capital city population:</li>
+                    <ul>
+                        <li>Population</li>
+                        <li>MSA/µSA population (Metropolitan statistical area / Micropolitan statistical area)</li>
+                        <li>CSA population (Combined statistical area)</li>
+                    </ul>
+            </ul>
     </ul>
-<li>Country calling codes</li>
+<li>Country calling codes (international call prefixes)</li>
     <ul>
         <li>Country name</li>
         <li>International calling code</li>
@@ -41,3 +44,11 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 <li>US states income rank</li>
 <li>US states density rank</li>
 </ul>
+
+# How to use
+
+# Installing
+
+# Dependencies
+
+# Licence
