@@ -9,7 +9,6 @@ def canonize(df):
     df = df.str.replace('  ',' ')
     return df
 
-
 def enrich(data=None, source_data_name=None, source_data_type=None, target_data_type=None):
     if data == None:
         # TODO: Make sure this is the right exception for this situation.
@@ -31,7 +30,6 @@ def enrich(data=None, source_data_name=None, source_data_type=None, target_data_
         if source_data_name==None:
             source_data_name = source_data_type
         return df_enrich(data, source_data_name, source_data_type, target_data_type)
-
     
 def str_enrich(str, source_data_type, target_data_type):
     # We implement this function using the df_enrich. We basically send the string as a df to df_enrich

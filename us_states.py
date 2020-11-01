@@ -240,7 +240,7 @@ def us_state_full_name_to_area_rank(df, source_data_name):
         'vermont':	'45',
         'new hampshire':	'46',
         'new jersey':	'47',
-        'connectopulaicut':	'48',
+        'connecticut':	'48',
         'delaware':	'49',
         'rhode island':	'50'
     }
@@ -362,7 +362,7 @@ def us_capital_city_population_2019(df, source_data_name):
     df.replace({source_data_name: us_capital_city_population_2019}, inplace=True)
     return df
 
-def us_capital_city_ption_2019_msa(df, source_data_name):
+def us_capital_city_population_2019_msa(df, source_data_name):
     df = df
     us_capital_city_population_2019_msa = {
         'montgomery':	'373290',
