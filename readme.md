@@ -1,5 +1,5 @@
 # Hoopoe
-## A f ast and easy way to enrich your data
+## A fast and easy way to enrich your data
 
 
 Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.
@@ -26,6 +26,10 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
                         <li>CSA population (Combined statistical area)</li>
                     </ul>
             </ul>
+        <li>State area:</li>
+            <ul>
+                <li>State area rank</li>
+            </ul>
     </ul>
 <li>Country calling codes (international call prefixes)</li>
     <ul>
@@ -43,6 +47,10 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 <li>US population rank</li>
 <li>US states income rank</li>
 <li>US states density rank</li>
+<li>Population by country</li>
+<li>Capital City by country</li>
+<li>Countries time zone</li>
+<li>Countries official language</li>
 </ul>
 
 # How to use
@@ -50,5 +58,7 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 # Installing
 
 # Dependencies
+* [NumPy](https://www.numpy.org)
+* [Pandas](https://pandas.pydata.org)
 
 # Licence
