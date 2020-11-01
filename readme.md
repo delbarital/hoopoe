@@ -62,3 +62,4 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 * [Pandas](https://pandas.pydata.org)
 
 # Licence
+MIT License
