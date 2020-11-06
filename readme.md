@@ -1,7 +1,6 @@
 # Hoopoe
 ## A fast and easy way to enrich your data
 
-
 Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.
 
 Hoopoe saves you time in scraping data and load it to Pandas Dataframes. Instead, just specify the data you already have in your dataframe and its type, and specify the desired data you would like to add.
@@ -54,6 +53,15 @@ Hoopoe is in its early days, therefore, bugs are expected. In addition, the curr
 </ul>
 
 # How to use
+
+Currently Hoopoe supports enrichments of Pandas Dataframes and single strings.
+For basic usage, after installation, import hoopoe and use the hoopoe enrich function as follows:<br>
+hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
+
+<b>data</b> - Either a string or a Pandas data frame.<br>
+<b>source_data_name</b> - the dataframe column name of the column you want to enrich.<br>
+<b>source_data_type</b> - the Hoopoe source data type. For example us_state_name_abbr for a column holding abbriviations of us state.<br>
+<b>target_data_type</b> - the target Hoopoe data type you would like Hoopoe to return. For example, for country name, return the target date type phone_prefix for country calling code.
 
 # Installing
 
