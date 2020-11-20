@@ -58,10 +58,15 @@ Currently Hoopoe supports enrichments of Pandas Dataframes and single strings.
 For basic usage, after installation, import hoopoe and use the hoopoe enrich function as follows:<br>
 hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 
-<b>data</b> - Either a string or a Pandas data frame.<br>
+<b>data</b> - Either a string or a Pandas dataframe.<br>
 <b>source_data_name</b> - the dataframe column name of the column you want to enrich.<br>
 <b>source_data_type</b> - the Hoopoe source data type. For example us_state_name_abbr for a column holding abbriviations of us state.<br>
 <b>target_data_type</b> - the target Hoopoe data type you would like Hoopoe to return. For example, for country name, return the target date type phone_prefix for country calling code.
+
+## Enrichment options
+| Source data type desc. | Hoopoe source_data_type | Target data type desc. | Hoopoe target_data_type
+| ------ | ------ | ------ | ------ |
+| la | la | a | asdf | 
 
 # Installing
 
