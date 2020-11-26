@@ -70,7 +70,7 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 | Places | Full USA states name  | us_state_name_full | Two letter abbriviations of USA states name | us_state_name_abbr |
 | Places | Full USA states name  | us_state_name_full | State population (2019) | us_state_population |
 | Places | Full USA state name | us_state_name_full | State capital city name | us_state_capital_city
-| Phone numbers | Intenational phone prefix | phone_prefix | 
+| Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 
 # Installing
 
