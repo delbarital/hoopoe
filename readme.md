@@ -64,9 +64,13 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 <b>target_data_type</b> - the target Hoopoe data type you would like Hoopoe to return. For example, for country name, return the target date type phone_prefix for country calling code.
 
 ## Enrichment options
-| Source data type desc. | Hoopoe source_data_type | Target data type desc. | Hoopoe target_data_type
-| ------ | ------ | ------ | ------ |
-| la | la | a | asdf | 
+| Category | Source data type desc. | Hoopoe source_data_type | Target data type desc. | Hoopoe target_data_type
+| ------ | ------ | ------ | ------ | ------ |
+| Places | Two letter abbriviations of USA states names | us_state_name_abbr | Full USA states name  | us_state_name_full | 
+| Places | Full USA states name  | us_state_name_full | Two letter abbriviations of USA states name | us_state_name_abbr |
+| Places | Full USA states name  | us_state_name_full | State population (2019) | us_state_population |
+| Places | Full USA state name | us_state_name_full | State capital city name | us_state_capital_city
+| Phone numbers | Intenational phone prefix | phone_prefix | 
 
 # Installing
 
