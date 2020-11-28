@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup (
     name='hoopoe',
     version='0.0.1',
@@ -18,4 +21,6 @@ setup (
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
+    long_description =long_description,
+    long_description_content_type="text/markdown",
 )
