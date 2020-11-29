@@ -23,4 +23,8 @@ setup (
     ],
     long_description =long_description,
     long_description_content_type="text/markdown",
+    install_requires=[
+        #TODO: Check if can be reduced
+        "pandas>=1",
+    ],
 )
