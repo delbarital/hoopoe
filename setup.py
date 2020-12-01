@@ -32,4 +32,7 @@ setup (
             "pytest>=3.7",
         ],
     },
+    url="https://github.com/delbarital/hoopoe",
+    author="Tal Delbari",
+    author_email="delbarital@gmail.com",
 )
