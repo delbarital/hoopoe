@@ -28,8 +28,10 @@ setup (
         "pandas>=1",
     ],
     extra_requires={
+        #TODO: Check if can be reduced
         "dev": [
             "pytest>=3.7",
+            "check-manifest>=0.45"
         ],
     },
     url="https://github.com/delbarital/hoopoe",
