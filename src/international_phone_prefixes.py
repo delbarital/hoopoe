@@ -46,7 +46,6 @@ def international_phone_prefixes_to_country(df, source_data_name):
         '56':	'chile',
         '86':	'china',
         '61':	'christmas island',
-        '61':	'cocos islands',
         '57':	'colombia',
         '269':	'comoros',
         '682':	'cook islands',

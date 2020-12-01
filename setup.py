@@ -27,4 +27,9 @@ setup (
         #TODO: Check if can be reduced
         "pandas>=1",
     ],
+    extra_requires={
+        "dev": [
+            "pytest>=3.7",
+        ],
+    },
 )
