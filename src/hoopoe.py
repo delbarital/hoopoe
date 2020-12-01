@@ -1,5 +1,8 @@
-from us_states import *
-from international_phone_prefixes import *
+import importlib
+us_states = input('us_states')
+importlib.import_module(us_states)
+international_phone_prefixes = input('international_phone_prefixes')
+importlib.import_module(international_phone_prefixes)
 import pandas as pd
 
 
