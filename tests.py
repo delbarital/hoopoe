@@ -1,4 +1,4 @@
-import hoopoe
+from .src import hoopoe
 import pytest
 
 
