@@ -2,3 +2,6 @@ include *.md
 include *.py
 include LICENSE
 recursive-include src *.py
+
+# added by check-manifest
+include *.txt
