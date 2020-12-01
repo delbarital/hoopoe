@@ -1,5 +1,5 @@
-import .us_states
-import .international_phone_prefixes
+from us_states import *
+from international_phone_prefixes import *
 import pandas as pd
 
 
