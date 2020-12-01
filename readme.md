@@ -75,6 +75,14 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 <br><br>
 
 # Installing
+To install Hoopoe, run the following in your virtualenv:
+
+`$ pip install hoopoe`
+
+# Developing Hoopoe
+To install Hoopoe, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+`$ pip install -e .[dev]`
 
 # Dependencies
 * [NumPy](https://www.numpy.org)
