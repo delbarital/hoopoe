@@ -422,7 +422,6 @@ def us_capital_city_population_2019_msa(df, source_data_name):
 def us_capital_city_population_2019_csa(df, source_data_name):
     df = df
     us_capital_city_population_2019_csa = {
-        #TODO: lowercase
         'montgomery':	'461516',
         'juneau':	'32113',
         'phoenix':	'5002221',
