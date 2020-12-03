@@ -88,6 +88,10 @@ To install Hoopoe, along with the tools you need to develop and run tests, run t
 # Dependencies
 * [NumPy](https://www.numpy.org)
 * [Pandas](https://pandas.pydata.org)
+<br><br>
+## Dev dependencies (only for contributers)
+* [pytest](https://pytest.org)
+* [check-manifest](https://github.com/mgedmin/check-manifest)
 
 # Licence
 MIT License
