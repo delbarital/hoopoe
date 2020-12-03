@@ -48,6 +48,8 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
         df = us_states.us_state_full_name_to_population(df, target_data_type)
     if source_data_type == 'us_state_name_full' and target_data_type == 'us_state_capital_city':
         df = us_states.us_state_full_name_to_capital_city(df, target_data_type)
+    if source_data_type == 'us_state_name_full' and target_data_type == 'us_state_area_rank':
+        df = us_states.us_state_full_name_to_area_rank(df, target_data_type)
 
     if source_data_type == 'int_phone_prefix' and target_data_type == 'country_name':
         df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
