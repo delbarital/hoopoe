@@ -1,13 +1,7 @@
 import us_states
 import international_phone_prefixes
 import pandas as pd
-
-
-def canonize(df):
-    df = df.str.lower()
-    df = df.str.replace('-',' ')
-    df = df.str.replace('  ',' ')
-    return df
+import canonicalization
 
 def enrich(data=None, source_data_name=None, source_data_type=None, target_data_type=None):
     if data == None:
@@ -41,12 +35,11 @@ def str_enrich(str, source_data_type, target_data_type):
     return result
 
 def df_enrich(df, source_data_name, source_data_type, target_data_type):
-    df[source_data_name] = canonize(df[source_data_name])
-
     # We copy the content of the original data to a new column and later replace the copied data
     # with the translated data.
     df[target_data_type] = df[source_data_name]
-
+    if source_data_type == 'us_state_name_abbr' or source_data_type == 'us_state_name_full':
+        df[target_data_type] = canonicalization.remove_double_spaces_and_dashes(df[target_data_type])
     if source_data_type == 'us_state_name_abbr' and target_data_type == 'us_state_name_full':
         df = us_states.us_state_abbr_to_state_name(df, target_data_type)
     if source_data_type == 'us_state_name_full' and target_data_type == 'us_state_name_abbr':
@@ -55,6 +48,8 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
         df = us_states.us_state_full_name_to_population(df, target_data_type)
     if source_data_type == 'us_state_name_full' and target_data_type == 'us_state_capital_city':
         df = us_states.us_state_full_name_to_capital_city(df, target_data_type)
+
     if source_data_type == 'int_phone_prefix' and target_data_type == 'country_name':
+        df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
         df = international_phone_prefixes.international_phone_prefixes_to_country(df, target_data_type)
     return df
