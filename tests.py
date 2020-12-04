@@ -1,7 +1,5 @@
-from .src import hoopoe
+from src import hoopoe
 import pytest
-
-# print(enrich.enrich("asda", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full"))
 
 def test_us_state_name_abbr_to_full_name():
     assert hoopoe.enrich("ca", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full") == "california"

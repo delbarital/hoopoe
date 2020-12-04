@@ -1,7 +1,8 @@
-import us_states
-import international_phone_prefixes
+from . import us_states
+from . import international_phone_prefixes
+from . import canonicalization
+
 import pandas as pd
-import canonicalization
 
 def enrich(data=None, source_data_name=None, source_data_type=None, target_data_type=None):
     if data == None:
