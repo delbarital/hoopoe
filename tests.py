@@ -1,4 +1,4 @@
-from src import hoopoe
+import hoopoe
 import pytest
 
 def test_us_state_name_abbr_to_full_name():
