@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setup (
     name='hoopoe',
-    version='0.0.5',
+    version='0.0.6',
     description='Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.',
-    py_modules=["hoopoe", "us_states", "international_phone_prefixes", "canonize"],
+    py_modules=["hoopoe", "us_states", "international_phone_prefixes", "canonicalization"],
     package_dir={'': 'src'},
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
