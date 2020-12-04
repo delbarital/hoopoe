@@ -1,6 +1,6 @@
-from . import us_states
-from . import international_phone_prefixes
-from . import canonicalization
+import us_states
+import international_phone_prefixes
+import canonicalization
 
 import pandas as pd
 
