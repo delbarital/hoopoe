@@ -1,5 +1,6 @@
 import us_states
 import international_phone_prefixes
+import units_conversion
 import canonicalization
 
 import pandas as pd
