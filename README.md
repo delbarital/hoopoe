@@ -78,8 +78,8 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 ## Enrichment options
 | Category | Source data type desc. | Hoopoe source_data_type | Target data type desc. | Hoopoe target_data_type
 | ------ | ------ | ------ | ------ | ------ |
-| Places | Two letter abbriviations of USA states names | us_state_name_abbr | Full USA states name  | us_state_name_full | 
-| Places | Full USA states name  | us_state_name_full | Two letter abbriviations of USA states name | us_state_name_abbr |
+| Places | Two letter abbriviations of USA states name (USPS abbreviation) | us_state_name_abbr | Full USA states name  | us_state_name_full | 
+| Places | Full USA states name  | us_state_name_full | Two letter abbriviations of USA states name (USPS abbreviation) | us_state_name_abbr |
 | Places | Full USA states name  | us_state_name_full | State population (2019) | us_state_population |
 | Places | Full USA state name | us_state_name_full | State capital city name | us_state_capital_city
 | Places | Capital city name | us_capital_city_name | City population 2019 est.| us_capital_city_population 
@@ -89,11 +89,11 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 | Phone numbers | Country name | country_name | Intenational phone prefix | phone_prefix
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 | Units - Tempreture | Celsius | celsius | Farenheit | farenheit
-| Units - Tempreture | Celsius | celsius | Kelvin | Kelvin
+| Units - Tempreture | Celsius | celsius | Kelvin | kelvin
 | Units - Tempreture | Farenheit | farenheit | Celsius | celsius
-| Units - Tempreture | Farenheit | farenheit | Kelvin | Kelvin
-| Units - Tempreture | Kelvin | Kelvin | Celsius | celsius
-| Units - Tempreture | Kelvin | Kelvin | Farenheit | farenheit
+| Units - Tempreture | Farenheit | farenheit | Kelvin | kelvin
+| Units - Tempreture | Kelvin | kelvin | Celsius | celsius
+| Units - Tempreture | Kelvin | kelvin | Farenheit | farenheit
 
 <br><br>
 
