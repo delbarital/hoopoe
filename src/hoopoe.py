@@ -61,6 +61,9 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
 
     if source_data_type == 'int_phone_prefix' and target_data_type == 'country_name':
         df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
+        df = international_phone_prefixes.country_to_international_phone_prefixes(df, target_data_type)
+    if source_data_type == 'country_name' and target_data_type == 'int_phone_prefix':
+        df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
         df = international_phone_prefixes.international_phone_prefixes_to_country(df, target_data_type)
 
     if source_data_type == 'celsius' and target_data_type == 'farenheit':

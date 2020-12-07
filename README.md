@@ -44,7 +44,7 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
     </ul>
 </ul>
 
-<br><br>
+<br>
 
 ## Work in progress datasets
 <ul>
@@ -83,6 +83,7 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 | Places | Capital city name | us_capital_city_name | City population (Metropolitan/Micropolitan Statistical Area - MSA) 2019 est.| us_capital_city_population_msa
 | Places | Capital city name | us_capital_city_name | City population (Combined Statistical Area - CSA) 2019 est. | us_capital_city_population_csa
 | Places | Full USA state name | us_state_name_full | State area rank | us_state_area_rank
+| Phone numbers | Country name | country_name | Intenational phone prefix | phone_prefix
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 | Units - Tempreture | Celsius | celsius | Farenheit | farenheit
 | Units - Tempreture | Celsius | celsius | Kelvin | Kelvin
