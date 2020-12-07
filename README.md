@@ -55,10 +55,13 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
 <li>US population rank</li>
 <li>US states income rank</li>
 <li>US states density rank</li>
+<li>US city population</li>
 <li>Population by country</li>
 <li>Capital City by country</li>
 <li>Countries time zone</li>
 <li>Countries official language</li>
+<li>Countries area</li>
+<li>Countries capital city</li> 
 </ul>
 
 # How to use
