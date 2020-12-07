@@ -36,6 +36,12 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
         <li>International calling code</li>
     </ul>
 </ul>
+<li>Units of measure</li>
+    <ul>
+        <li>Celsius</li>
+        <li>farenheit</li>
+        <li>Kelvin</li>
+    </ul>
 <br><br>
 
 ## Work in progress datasets
@@ -76,6 +82,12 @@ hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
 | Places | Capital city name | us_capital_city_name | City population (Combined Statistical Area - CSA) 2019 est. | us_capital_city_population_csa
 | Places | Full USA state name | us_state_name_full | State area rank | us_state_area_rank
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
+| Units | Celsius | celsius | Farenheit | farenheit
+| Units | Celsius | celsius | Kelvin | Kelvin
+| Units | Farenheit | farenheit | Celsius | celsius
+| Units | Farenheit | farenheit | Kelvin | Kelvin
+| Units | Kelvin | Kelvin | Celsius | celsius
+| Units | Kelvin | Kelvin | Farenheit | farenheit
 
 <br><br>
 

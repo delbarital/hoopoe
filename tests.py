@@ -1,5 +1,6 @@
 import hoopoe
 import pytest
+import units_conversion
 
 def test_us_state_name_abbr_to_full_name():
     assert hoopoe.enrich("ca", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full") == "california"
@@ -34,5 +35,3 @@ def test_us_state_full_name_to_state_abbr():
     with pytest.raises(ValueError) as excinfo:
         hoopoe.enrich(source_data_type="us_state_name_name", target_data_type="us_state_name_abbr")
         assert "ValueError" in str(excinfo.value)
-
-# print(test_us_state_name_abbr_to_full_name())

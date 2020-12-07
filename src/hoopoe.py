@@ -20,7 +20,7 @@ def enrich(data=None, source_data_name=None, source_data_type=None, target_data_
         raise ValueError("No target_data_type were provided.")
  
 
-    if isinstance(data, str):
+    if isinstance(data, str) or isinstance(data, int):
         return str_enrich(str=data, source_data_type=source_data_type, target_data_type=target_data_type)
     if isinstance(data,  pd.DataFrame):
         if source_data_name==None:
@@ -62,4 +62,19 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
     if source_data_type == 'int_phone_prefix' and target_data_type == 'country_name':
         df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
         df = international_phone_prefixes.international_phone_prefixes_to_country(df, target_data_type)
+
+    if source_data_type == 'celsius' and target_data_type == 'farenheit':
+        df = units_conversion.c_to_f(df, target_data_type)
+    if source_data_type == 'celsius' and target_data_type == 'kelvin':
+        df = units_conversion.c_to_k(df, target_data_type)
+    if source_data_type == 'farenheit' and target_data_type == 'celsius':
+        df = units_conversion.f_to_c(df, target_data_type)    
+    if source_data_type == 'farenheit' and target_data_type == 'kelvin':
+        df = units_conversion.f_to_k(df, target_data_type)    
+    if source_data_type == 'kelvin' and target_data_type == 'celsius':
+        df = units_conversion.k_to_c(df, target_data_type)    
+    if source_data_type == 'kelvin' and target_data_type == 'farenheit':
+        df = units_conversion.k_to_f(df, target_data_type)    
+
+
     return df
