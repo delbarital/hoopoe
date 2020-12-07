@@ -68,7 +68,7 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
 
 Currently Hoopoe supports enrichments of Pandas Dataframes and single strings.
 For basic usage, after installation, import hoopoe and use the hoopoe enrich function as follows:<br>
-hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)
+`hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)` 
 
 <b>data</b> - Either a string or a Pandas dataframe.<br>
 <b>source_data_name</b> - the dataframe column name of the column you want to enrich.<br>
