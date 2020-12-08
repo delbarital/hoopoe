@@ -80,7 +80,7 @@ For basic usage, after installation, import hoopoe and use the hoopoe enrich fun
 | ------ | ------ | ------ | ------ | ------ |
 | Places | Two letter abbriviations of USA states name (USPS abbreviation) | us_state_name_abbr | Full USA states name  | us_state_name_full | 
 | Places | Full USA states name  | us_state_name_full | Two letter abbriviations of USA states name (USPS abbreviation) | us_state_name_abbr |
-| Places | Full USA states name  | us_state_name_full | State population (2019) | us_state_population |
+| Places | Full USA states name  | us_state_name_full | State population 2019 est. | us_state_population |
 | Places | Full USA state name | us_state_name_full | State capital city name | us_state_capital_city
 | Places | Capital city name | us_capital_city_name | City population 2019 est.| us_capital_city_population 
 | Places | Capital city name | us_capital_city_name | City population (Metropolitan/Micropolitan Statistical Area - MSA) 2019 est.| us_capital_city_population_msa
