@@ -8,7 +8,7 @@ Hoopoe saves you time in scraping data and loading it to Pandas Dataframes. Inst
 ## Current development status
 Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs are expected. In addition, the current dataset avialability is low. You can check the list below to find out which datasets and translations are already available. This list will be updated from time to time.
 
-## Available datasets
+## Available datasets, enrichment options and translations
 <ul>
 <li>US states</li>
     <ul>
