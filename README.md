@@ -27,7 +27,8 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
             </ul>
         <li>State area:</li>
             <ul>
-                <li>State area rank</li>
+                <li>State total area rank</li>
+                <li>State total area (KM)</li>
             </ul>
     </ul>
 <li>Country calling codes (international call prefixes)</li>
@@ -49,7 +50,6 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
 ## Work in progress datasets
 <ul>
 <li>US states ISO 3166 code</li>
-<li>US states area</li>
 <li>US states time zone</li>
 <li>US states density</li>
 <li>US population rank</li>
@@ -85,7 +85,8 @@ For basic usage, after installation, import hoopoe and use the hoopoe enrich fun
 | Places | Capital city name | us_capital_city_name | City population 2019 est.| us_capital_city_population 
 | Places | Capital city name | us_capital_city_name | City population (Metropolitan/Micropolitan Statistical Area - MSA) 2019 est.| us_capital_city_population_msa
 | Places | Capital city name | us_capital_city_name | City population (Combined Statistical Area - CSA) 2019 est. | us_capital_city_population_csa
-| Places | Full USA state name | us_state_name_full | State area rank | us_state_area_rank
+| Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area_rank
+| Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area (KM)
 | Phone numbers | Country name | country_name | Intenational phone prefix | phone_prefix
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 | Units - Tempreture | Celsius | celsius | Farenheit | farenheit

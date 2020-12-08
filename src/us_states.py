@@ -532,3 +532,60 @@ def us_state_total_area_rank(df, source_data_name):
     }
     df.replace({source_data_name: us_state_total_area_rank}, inplace=True)
     return df
+
+def us_state_total_area(df, source_data_name):
+    df = df
+    us_state_total_area = {
+        'alaska': 	'1723337',
+        'texas': 	'695662',
+        'california': 	'423967',
+        'montana': 	'380831',
+        'new mexico': 	'314917',
+        'arizona': 	'295234',
+        'nevada': 	'286380',
+        'colorado': 	'269601',
+        'oregon': 	'254799',
+        'wyoming': 	'253335',
+        'michigan': 	'250487',
+        'minnesota': 	'225163',
+        'utah': 	'219882',
+        'idaho': 	'216443',
+        'kansas': 	'213100',
+        'nebraska': 	'200330',
+        'south dakota': 	'199729',
+        'washington': 	'184661',
+        'north dakota': 	'183108',
+        'oklahoma': 	'181037',
+        'missouri': 	'180540',
+        'florida': 	'170312',
+        'wisconsin': 	'169635',
+        'georgia': 	'153910',
+        'illinois': 	'149995',
+        'iowa': 	'145746',
+        'new york': 	'141297',
+        'north carolina': 	'139391',
+        'arkansas': 	'137732',
+        'alabama': 	'135767',
+        'louisiana': 	'135659',
+        'mississippi': 	'125438',
+        'pennsylvania': 	'119280',
+        'ohio': 	'116098',
+        'virginia': 	'110787',
+        'tennessee': 	'109153',
+        'kentucky': 	'104656',
+        'indiana': 	'94326',
+        'maine': 	'91633',
+        'south carolina': 	'82933',
+        'west virginia': 	'62756',
+        'maryland': 	'32131',
+        'hawaii': 	'28313',
+        'massachusetts': 	'27336',
+        'vermont': 	'24906',
+        'new hampshire': 	'24214',
+        'new jersey': 	'22591',
+        'connecticut': 	'14357',
+        'delaware': 	'6446',
+        'rhode island': 	'4001'
+    }
+    df.replace({source_data_name: us_state_total_area}, inplace=True)
+    return df
