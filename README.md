@@ -29,6 +29,10 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
             <ul>
                 <li>State total area rank</li>
                 <li>State total area (KM)</li>
+                <li>State land area rank</li>
+                <li>State land area (KM)</li>
+                <li>State water area rank</li>
+                <li>State water area (KM)</li>
             </ul>
     </ul>
 <li>Country calling codes (international call prefixes)</li>
@@ -95,6 +99,10 @@ For basic usage, after installation, import hoopoe and use the hoopoe enrich fun
 | Places | Capital city name | us_capital_city_name | City population (Combined Statistical Area - CSA) 2019 est. | us_capital_city_population_csa
 | Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area_rank
 | Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area (KM)
+| Places | Full USA state name | us_state_name_full | State land area rank | us_state_land_area_rank
+| Places | Full USA state name | us_state_name_full | State land area rank | us_state_land_area (KM)
+| Places | Full USA state name | us_state_name_full | State water area rank | us_state_water_area_rank
+| Places | Full USA state name | us_state_name_full | State water area rank | us_state_water_area (KM)
 | Phone numbers | Country name | country_name | Intenational phone prefix | phone_prefix
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 | Units - Tempreture | Celsius | celsius | Farenheit | farenheit
