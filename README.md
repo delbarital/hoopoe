@@ -21,8 +21,8 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
                 <li>State capital city population:</li>
                     <ul>
                         <li>Population</li>
-                        <li>MSA/µSA population (Metropolitan statistical area / Micropolitan statistical area)</li>
-                        <li>CSA population (Combined statistical area)</li>
+                        <li>MSA/µSA population (Metropolitan Statistical Area / Micropolitan Statistical Area)</li>
+                        <li>CSA population (Combined Statistical Area)</li>
                     </ul>
             </ul>
         <li>State area:</li>
