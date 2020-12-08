@@ -63,6 +63,13 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
 <li>Countries official language</li>
 <li>Countries area</li>
 <li>Countries capital city</li> 
+<li>Unit of measure</li>
+    <ul>
+        <li>Distance</li>
+        <li>Area</li>
+        <li>Speed</li>
+        <li>Energy</li>
+    </ul>
 </ul>
 
 # How to use
