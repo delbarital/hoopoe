@@ -39,7 +39,7 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
 <li>Units of measure</li>
     <ul>
         <li>Celsius</li>
-        <li>farenheit</li>
+        <li>Farenheit</li>
         <li>Kelvin</li>
     </ul>
 </ul>
