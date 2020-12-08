@@ -44,8 +44,9 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
         <li>Kelvin</li>
     </ul>
 </ul>
-
 <br>
+* If you would like to see here another dataset, please contact me and let me know. 
+<br><br>
 
 ## Work in progress datasets
 <ul>
