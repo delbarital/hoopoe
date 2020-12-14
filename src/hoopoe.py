@@ -19,9 +19,10 @@ def enrich(data=None, source_data_name=None, source_data_type=None, target_data_
     if target_data_type == None:
         raise ValueError("No target_data_type were provided.")
  
-    # TODO: isinstance should also work for numbers that are not ints
-    if isinstance(data, str) or isinstance(data, (int, float, complex)):
+    if isinstance(data, str):
         return str_enrich(str=data, source_data_type=source_data_type, target_data_type=target_data_type)
+    if isinstance(data, (int, float, complex)):
+        return str_enrich(str=str(data), source_data_type=source_data_type, target_data_type=target_data_type)
     if isinstance(data,  pd.DataFrame):
         if source_data_name==None:
             source_data_name = source_data_type
