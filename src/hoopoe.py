@@ -5,10 +5,7 @@ import canonicalization
 
 import pandas as pd
 
-def enrich(data=None, source_data_name=None, source_data_type=None, target_data_type=None):
-    if data == None:
-        # TODO: Make sure this is the right exception for this situation.
-        raise ValueError("No data was provided.")
+def enrich(data, source_data_name=None, source_data_type=None, target_data_type=None):
     if source_data_name == None and source_data_type == None:
         # TODO: Make sure this is the right exception for this situation.
         raise ValueError("No source_data_name or source_data_type were provided.")
