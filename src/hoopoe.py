@@ -38,8 +38,10 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
     # We copy the content of the original data to a new column and later replace the copied data
     # with the translated data.
     df[target_data_type] = df[source_data_name]
-    if source_data_type == 'us_state_name_abbr' or source_data_type == 'us_state_name_full':
+    if source_data_type == 'us_state_name_full':
         df[target_data_type] = canonicalization.prepare_names(df[target_data_type])
+    if source_data_type == 'us_state_name_abbr':
+        df[target_data_type] = canonicalization.prepare_abbr(df[target_data_type])
     if source_data_type == 'us_state_name_abbr' and target_data_type == 'us_state_name_full':
         df = us_states.us_state_abbr_to_state_name(df, target_data_type)
     if source_data_type == 'us_state_name_full' and target_data_type == 'us_state_name_abbr':

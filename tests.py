@@ -27,11 +27,11 @@ def test_us_state_name_abbr_to_full_name():
     assert target_df.equals(hoopoe.enrich(df, source_data_type="us_state_name_abbr", source_data_name="state_abbr", target_data_type="us_state_name_full")) == True
 
 
-    state_abbr = ["ca", "nm", "nj", "wa", "NY", "aL", "Or", "s.D"]
+    state_abbr = ["ca", "nm", "nj", "wa", "NY", "aL", "Or", "s.D", "s-c", "r  i"]
     df = pd.DataFrame(state_abbr, columns={"state_abbr"})    
     target_df = pd.DataFrame()
     target_df['state_abbr'] = state_abbr
-    target_df['us_state_name_full'] = ["california", "new mexico", "new jersey", "washington", "new york", "alabama", "oregon", "south dakota"]
+    target_df['us_state_name_full'] = ["california", "new mexico", "new jersey", "washington", "new york", "alabama", "oregon", "south dakota", "south carolina", "rhode island"]
     assert target_df.equals(hoopoe.enrich(df, source_data_type="us_state_name_abbr", source_data_name="state_abbr", target_data_type="us_state_name_full")) == True 
 
 
