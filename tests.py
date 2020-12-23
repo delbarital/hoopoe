@@ -16,12 +16,22 @@ def test_us_state_name_abbr_to_full_name():
         hoopoe.enrich(" ", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full")
         assert "KeyError" in str(excinfo.value)
     
-    #df tests
-    state_abbr = ["ca", "nm", "nj", "wa", "NY"]
+    #Dataframe tests
+
+    # TODO: this test doesn't work. The target df is empty and so the reutned df (as expected) but the equals function returns False for some reason.
+    state_abbr = [""]
     df = pd.DataFrame(state_abbr, columns={"state_abbr"})    
     target_df = pd.DataFrame()
     target_df['state_abbr'] = state_abbr
-    target_df['us_state_name_full'] = ["california", "new mexico", "new jersey", "washington", "new york"]
+    target_df['us_state_name_full'] = [""]
+    assert target_df.equals(hoopoe.enrich(df, source_data_type="us_state_name_abbr", source_data_name="state_abbr", target_data_type="us_state_name_full")) == True
+
+
+    state_abbr = ["ca", "nm", "nj", "wa", "NY", "aL", "Or", "s.D"]
+    df = pd.DataFrame(state_abbr, columns={"state_abbr"})    
+    target_df = pd.DataFrame()
+    target_df['state_abbr'] = state_abbr
+    target_df['us_state_name_full'] = ["california", "new mexico", "new jersey", "washington", "new york", "alabama", "oregon", "south dakota"]
     assert target_df.equals(hoopoe.enrich(df, source_data_type="us_state_name_abbr", source_data_name="state_abbr", target_data_type="us_state_name_full")) == True 
 
 
