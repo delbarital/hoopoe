@@ -1,4 +1,4 @@
-# string to lowercaes, remove dashse and double spaces
+# string to lowercaes, remove dashse, dots and double spaces
 def prepare_names(df):
     df = df.str.lower()
     df = df.str.replace('-',' ')
