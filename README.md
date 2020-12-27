@@ -114,6 +114,55 @@ For basic usage, after installation, import hoopoe and use the hoopoe enrich fun
 
 <br><br>
 
+## Usage example
+
+Let's say that you have the following Pandas Dataframe that you would like to use to estimate your company's sales in each of the US states. One of the key factors of sales potential is, of course, the population of the state, so we would like to add this data to our dataframe.
+
+| State | Last model sales (2018) | Median household income (2018)
+| ----- | ----- | ----- |
+| AL | 1,877 | 49861
+| AK | 3,018 | 74346
+| AZ | 6,018 | 59243
+| NY | 25,087 | 67844
+| NJ | 17,983 | 81740
+| ... | ... | ...
+| TX | 14,007 | 60629
+
+<br>
+We can look at the hoopoe enrichment options and see that indeed, the population data for each US state is avialable. The problem is that in order to get it we need to provide the full state name, and currently we have only the two-letters code for each state. Luckly, hoopoe has another dataset that map states' two letter abbriviation to the full state name. After getting the full state name, we will use it to get the population data.
+<br><br>
+<u>step one - getting full state name</u>
+
+df = hoopoe.enrich(df, source_data_name = "State", source_data_type = "us_state_name_abbr", target_data_type = "us_state_name_full")
+
+now our dataframe will look like this:
+
+| State | Last model sales (2018) | Median household income (2018) | us_state_name_full
+| ----- | ----- | ----- | ----- |
+| AL | 1,877 | 49861 | alabama
+| AK | 3,018 | 74346 | alaska
+| AZ | 6,018 | 59243 | arizona
+| NY | 25,087 | 67844 | new york
+| NJ | 17,983 | 81740 | new jersey
+| ... | ... | ... | ...
+| TX | 14,007 | 60629 | texas
+
+<u>step two - getting state population</u>
+
+df = hoopoe.enrich(df, source_data_name = "us_state_name_full", source_data_type = "us_state_name_full", target_data_type = "us_state_population")
+
+Now, our dataframe contains the data that we wanted:
+
+| State | Last model sales (2018) | Median household income (2018) | us_state_name_full | us_state_population
+| ----- | ----- | ----- | ----- | -----
+| AL | 1,877 | 49861 | alabama | 4903185 
+| AK | 3,018 | 74346 | alaska |  731545
+| AZ | 6,018 | 59243 | arizona | 7278717
+| NY | 25,087 | 67844 | new york | 19453561
+| NJ | 17,983 | 81740 | new jersey | 8882190
+| ... | ... | ... | ... | ...
+| TX | 14,007 | 60629 | texas | 28995881
+
 # Installing
 To install Hoopoe, run the following in your virtualenv:
 
