@@ -133,7 +133,7 @@ We can look at the hoopoe enrichment options and see that indeed, the population
 <br><br>
 <u>step one - getting full state name</u>
 
-df = hoopoe.enrich(df, source_data_name = "State", source_data_type = "us_state_name_abbr", target_data_type = "us_state_name_full")
+`df = hoopoe.enrich(df, source_data_name = "State", source_data_type = "us_state_name_abbr", target_data_type = "us_state_name_full")`
 
 now our dataframe will look like this:
 
@@ -149,7 +149,7 @@ now our dataframe will look like this:
 
 <u>step two - getting state population</u>
 
-df = hoopoe.enrich(df, source_data_name = "us_state_name_full", source_data_type = "us_state_name_full", target_data_type = "us_state_population")
+`df = hoopoe.enrich(df, source_data_name = "us_state_name_full", source_data_type = "us_state_name_full", target_data_type = "us_state_population")`
 
 Now, our dataframe contains the data that we wanted:
 
