@@ -99,7 +99,7 @@ For basic usage, after installation, import Hoopoe and use the hoopoe enrich fun
 | Places | Capital city name | us_capital_city_name | City population (Metropolitan/Micropolitan Statistical Area - MSA) 2019 est.| us_capital_city_population_msa
 | Places | Capital city name | us_capital_city_name | City population (Combined Statistical Area - CSA) 2019 est. | us_capital_city_population_csa
 | Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area_rank
-| Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area (KM)
+| Places | Full USA state name | us_state_name_full | State total area rank | us_state_total_area (km[^2])
 | Places | Full USA state name | us_state_name_full | State land area rank | us_state_land_area_rank
 | Places | Full USA state name | us_state_name_full | State land area rank | us_state_land_area (KM)
 | Places | Full USA state name | us_state_name_full | State water area rank | us_state_water_area_rank
