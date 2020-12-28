@@ -3,10 +3,10 @@
 
 Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.
 
-Hoopoe saves you time in scraping data and loading it to Pandas Dataframes. Instead, just specify the data you already have in your dataframe and its type, and specify the desired data you would like to add.
+Hoopoe saves you time in scraping data and loading it to Pandas Dataframes. Instead, just specify the data you already have in your dataframe and its type, and select the desired data you would like to add.
 
 ## Current development status
-Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs are expected. In addition, the current dataset avialability is low. You can check the list below to find out which datasets and translations are already available. This list will be updated from time to time.
+Hoopoe is in its early days and offered as a pre-alpha version. Therefore, bugs are expected. In addition, the current dataset availability is low. You can check the list below to find out which datasets and translations are already available. This list will be updated from time to time.
 
 ## Available datasets, enrichment options and translations
 <ul>
@@ -74,12 +74,13 @@ Hoopoe is in its early days, and offered as a pre-alpha version, therefore, bugs
         <li>Speed</li>
         <li>Energy</li>
     </ul>
+<li>Day of week, day of month, day of year</li>
 </ul>
 
 # How to use
 
-Currently Hoopoe supports enrichments of Pandas Dataframes and single strings.
-For basic usage, after installation, import hoopoe and use the hoopoe enrich function as follows:<br>
+Currently, Hoopoe supports enrichments of Pandas Dataframes and single strings.
+For basic usage, after installation, import Hoopoe and use the hoopoe enrich function as follows:<br>
 `hoopoe.enrich(data, source_data_name, source_data_type, target_data_type)` 
 
 <b>data</b> - Either a string or a Pandas dataframe.<br>
@@ -129,13 +130,13 @@ Let's say that you have the following Pandas Dataframe that you would like to us
 | TX | 14,007 | 60629
 
 <br>
-We can look at the hoopoe enrichment options and see that indeed, the population data for each US state is avialable. The problem is that in order to get it we need to provide the full state name, and currently we have only the two-letters code for each state. Luckly, hoopoe has another dataset that map states' two letter abbriviation to the full state name. After getting the full state name, we will use it to get the population data.
+We can look at the Hoopoe enrichment options and see that, indeed, the population data for each US state is available. The problem is that to get it, we need to provide the full state name, and currently we have only the two-letter code for each state. Luckily, hoopoe has another dataset that s states' two-letter abbreviation to the full state name. After getting the full state name, we will use it to get the population data.
 <br><br>
 <u>step one - getting full state name</u>
 
 `df = hoopoe.enrich(df, source_data_name = "State", source_data_type = "us_state_name_abbr", target_data_type = "us_state_name_full")`
 
-now our dataframe will look like this:
+now our dataframe looks like this:
 
 | State | Last model sales (2018) | Median household income (2018) | us_state_name_full
 | ----- | ----- | ----- | ----- |
