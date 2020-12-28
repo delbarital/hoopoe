@@ -28,11 +28,11 @@ Hoopoe is in its early days and offered as a pre-alpha version. Therefore, bugs 
         <li>State area:</li>
             <ul>
                 <li>State total area rank</li>
-                <li>State total area (KM)</li>
+                <li>State total area (km<sup>2</sup>)</li>
                 <li>State land area rank</li>
-                <li>State land area (KM)</li>
+                <li>State land area (km<sup>2</sup>)</li>
                 <li>State water area rank</li>
-                <li>State water area (KM)</li>
+                <li>State water area (km<sup>2</sup>)</li>
             </ul>
     </ul>
 <li>Country calling codes (international call prefixes)</li>
