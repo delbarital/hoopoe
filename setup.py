@@ -7,7 +7,7 @@ setup (
     name='hoopoe',
     version='0.0.11',
     description='Hoopoe is a data enrichment service that makes it easy to improve your data-centric services and increase the accuracy of your ML models.',
-    py_modules=["hoopoe", "us_states", "international_phone_prefixes", "units_conversion", "canonicalization"],
+    py_modules=["hoopoe", "us_states", "international_phone_prefixes", "units_conversion", "countries", "canonicalization"],
     package_dir={'': 'src'},
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",

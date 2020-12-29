@@ -9,13 +9,11 @@ def test_us_state_name_abbr_to_full_name():
     assert hoopoe.enrich("wa", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full") == "washington"
     assert hoopoe.enrich("NY", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full") == "new york"
     assert hoopoe.enrich("nY", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full") == "new york"
+
     with pytest.raises(KeyError) as excinfo:
         hoopoe.enrich("n", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full")
         assert "KeyError" in str(excinfo.value)
-    with pytest.raises(KeyError) as excinfo:
-        hoopoe.enrich(" ", source_data_type="us_state_name_abbr", target_data_type="us_state_name_full")
-        assert "KeyError" in str(excinfo.value)
-    
+
     #Dataframe tests
 
     # TODO: this test doesn't work. The target df is empty and so the reutned df (as expected) but the equals function returns False for some reason.

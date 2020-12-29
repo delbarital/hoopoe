@@ -1,4 +1,5 @@
 import us_states
+# import countries
 import international_phone_prefixes
 import units_conversion
 import canonicalization
@@ -38,7 +39,7 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
     # We copy the content of the original data to a new column and later replace the copied data
     # with the translated data.
     df[target_data_type] = df[source_data_name]
-    if source_data_type == 'us_state_name_full':
+    if source_data_type == 'us_state_name_full' or source_data_type == 'country_name':
         df[target_data_type] = canonicalization.prepare_names(df[target_data_type])
     if source_data_type == 'us_state_name_abbr':
         df[target_data_type] = canonicalization.prepare_abbr(df[target_data_type])
@@ -76,6 +77,9 @@ def df_enrich(df, source_data_name, source_data_type, target_data_type):
     if source_data_type == 'country_name' and target_data_type == 'int_phone_prefix':
         df[target_data_type] = canonicalization.remove_plus(df[target_data_type])
         df = international_phone_prefixes.international_phone_prefixes_to_country(df, target_data_type)
+
+    # if source_data_type == 'country_name' and target_data_type == 'country_population_2019':
+    #     df = countries.country_population(df, target_data_type)
 
     if source_data_type == 'celsius' and target_data_type == 'farenheit':
         df = units_conversion.c_to_f(df, target_data_type)

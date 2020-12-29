@@ -10,6 +10,10 @@ Hoopoe is in its early days and offered as a pre-alpha version. Therefore, bugs 
 
 ## Available datasets, enrichment options and translations
 <ul>
+<li>World data</li>
+    <ul>
+    <li>Population by country</li>
+    </ul>
 <li>US states</li>
     <ul>
         <li>State name abbriviation (USPS abbreviation)</li>
@@ -57,12 +61,11 @@ Hoopoe is in its early days and offered as a pre-alpha version. Therefore, bugs 
 <li>US states ISO 3166 code</li>
 <li>US states time zone</li>
 <li>US states density</li>
-<li>US population rank</li>
+<li>US states population rank</li>
 <li>US states income rank</li>
 <li>US states density rank</li>
 <li>US city population</li>
-<li>Population by country</li>
-<li>Capital City by country</li>
+<li>Capital city by country</li>
 <li>Countries time zone</li>
 <li>Countries official language</li>
 <li>Countries area</li>
@@ -104,6 +107,7 @@ For basic usage, after installation, import Hoopoe and use the hoopoe enrich fun
 | Places | Full USA state name | us_state_name_full | State land area rank | us_state_land_area (km<sup>2</sup>)
 | Places | Full USA state name | us_state_name_full | State water area rank | us_state_water_area_rank
 | Places | Full USA state name | us_state_name_full | State water area rank | us_state_water_area (km<sup>2</sup>)
+| Places | Country name | country_name | country population (2019 est.) | country_population
 | Phone numbers | Country name | country_name | Intenational phone prefix | phone_prefix
 | Phone numbers | Intenational phone prefix | phone_prefix | Country name | country_name
 | Units - Tempreture | Celsius | celsius | Farenheit | farenheit
