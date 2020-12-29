@@ -16,7 +16,7 @@ def country_population_2019(df, source_data_name):
         'philippines': '108116615',
         'egypt': '100388073',
         'vietnam': '96462106',
-        'dr congo': '86790567',
+        'congo': '86790567',
         'germany': '83517045',
         'turkey': '83429615',
         'iran': '82913906',
